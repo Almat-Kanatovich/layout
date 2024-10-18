@@ -1,0 +1,66 @@
+@import "./title.css";
+@import './about-us.css';
+@import './projects.css';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, p, a {
+    letter-spacing: -0.03em;
+}
+
+.projects__btn:hover, .nav__link:hover, 
+.footer__link:hover, .about-us__btn {
+    color: #FFFFFF; 
+    background-color: #AD1818; 
+}
+
+.title__image-description, .services__title, .service__name, 
+.fullWidthImage__name, .footer__link, .footer__name {
+    color: #FFFFFF;
+}
+
+.container {
+    width: 1150px;
+    margin: 0 auto;
+    background-color: lightskyblue;
+}
+
+.title, .about_us, .projects {
+    margin-bottom: 150px;
+    background-color: grey;
+}
+
+
+@media (max-width: 1199px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        background-color: lightslategray;
+    }
+
+    .title, .about_us, .projects {
+        margin-bottom: 120px;
+        background-color: lightseagreen;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+        background-color: lightsalmon;
+    }
+
+    .title, .about_us, .projects {
+        margin-bottom: 80px;
+        background-color: yellow;
+    }
+}
